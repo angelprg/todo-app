@@ -1,5 +1,8 @@
 import { useState } from "react";
+// componente que utiliza el estado del input en el componente hijo
 import AddTodo from "./Components/AddTodo";
+
+// componente que utiliza el estado del input en el componente padre
 import AddTodoSinEstado from './Components/AddTodoSinEstado';
 import Todo from "./Components/Todo";
 
@@ -10,6 +13,8 @@ const items = [
 
 function App() {
   const [todos, setTodos] = useState(items);
+
+  // Ejemplo de uso del estado en el componente padre
   const [text, setText] = useState("");
   // console.log("todos", todos);
   
